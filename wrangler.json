@@ -12,5 +12,16 @@
   ],
   "observability": {
     "enabled": true
-  }
+  },
+  // ======================================================
+  // 新增 AI Search (AutoRAG) 繫結
+  // ======================================================
+  "ai_search": [
+    {
+      // 這是您在 Worker 程式碼 (例如 src/index.ts) 中使用的變數名稱。
+      "binding": "AI_RAG",
+      // 這是您在 Cloudflare 控制台中的 AI Search (AutoRAG) 實例名稱。
+      "rag_name": "rough-smoke-b49b"
+    }
+  ]
 }
