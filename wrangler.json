@@ -9,14 +9,14 @@
       "database_id": "25b98721-270e-4123-91e3-dbdae35a575f",
       "database_name": "d1-template-database"
     }
-  "secrets_store_secrets": [  
-  {  
-    "store_id": "c9c1271d7feb49b0aafedb43e574c52d",  
-    "binding": "SECRET",  
-    "secret_name": "d1data"
-  }  
-]
-  ],
+  ], // <<< 修正點 A: 加上 ']' 結束 d1_databases 陣列
+  "secrets_store_secrets": [ // <<< 修正點 B: 逗號在上一行的 ']' 後面
+    {
+      "store_id": "c9c1271d7feb49b0aafedb43e574c52d",
+      "binding": "SECRET",
+      "secret_name": "d1data"
+    }
+  ], // <<< 修正點 C: 這裡也需要一個逗號，因為後面還有 "observability"
   "observability": {
     "enabled": true
   },
