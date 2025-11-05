@@ -9,6 +9,13 @@
       "database_id": "25b98721-270e-4123-91e3-dbdae35a575f",
       "database_name": "d1-template-database"
     }
+  "secrets_store_secrets": [  
+  {  
+    "store_id": "c9c1271d7feb49b0aafedb43e574c52d",  
+    "binding": "SECRET",  
+    "secret_name": "d1data"
+  }  
+]
   ],
   "observability": {
     "enabled": true
